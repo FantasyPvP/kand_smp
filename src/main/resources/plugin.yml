@@ -2,3 +2,10 @@ name: kand_smp
 version: '${project.version}'
 main: fantasypvp.kand_smp.Kand_smp
 api-version: '1.20'
+commands:
+  lightning_sword:
+    description: Give player a lightning sword
+    usage: /lightning_sword
+  spawn:
+    description: Spawn player
+    usage: /spawn
