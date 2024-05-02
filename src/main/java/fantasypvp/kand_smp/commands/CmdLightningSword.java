@@ -1,6 +1,6 @@
 package fantasypvp.kand_smp.commands;
 
-import fantasypvp.kand_smp.items.Items;
+import fantasypvp.kand_smp.items.LightningGear;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.entity.Player;
 
@@ -15,7 +15,7 @@ public class CmdLightningSword implements CommandExecutor {
 
         Player player = (Player) sender;
         if (command.getName().equalsIgnoreCase("lightning_sword")) {
-            player.getInventory().addItem(Items.lightning_sword);
+            player.getInventory().addItem(LightningGear.lightning_sword);
         }
 
         return true;

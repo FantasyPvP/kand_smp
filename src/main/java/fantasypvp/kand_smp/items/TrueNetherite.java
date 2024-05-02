@@ -12,13 +12,12 @@ import java.util.List;
 
 import static org.bukkit.Bukkit.getServer;
 
-public class Items  {
+public class TrueNetherite  {
     public static ItemStack true_netherite_sword;
     public static ItemStack true_netherite_helmet;
     public static ItemStack true_netherite_chestplate;
     public static ItemStack true_netherite_leggings;
     public static ItemStack true_netherite_boots;
-    public static ItemStack lightning_sword;
 
     public static void init() {
         trueNetheriteSword();
@@ -26,41 +25,6 @@ public class Items  {
         trueNetheriteChestplate();
         trueNetheriteLeggings();
         trueNetheriteBoots();
-        lightningSword();
-    }
-
-    private static void lightningSword() {
-        ItemStack item = new ItemStack(Material.NETHERITE_SWORD, 1);
-        ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("Lightning Sword");
-        List<String> lore = new ArrayList<>();
-        lore.add("§7All who oppose shall be smitten");
-        meta.setLore(lore);
-        // set damage to 12 when in main hand
-        meta.addAttributeModifier(
-                Attribute.GENERIC_ATTACK_DAMAGE,
-                new AttributeModifier(
-                        "generic.attackDamage",
-                        12,
-                        AttributeModifier.Operation.ADD_NUMBER
-                )
-        );
-        item.setItemMeta(meta);
-        lightning_sword = item;
-
-        meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
-
-        // shaped recipe
-        ShapedRecipe recipe = new ShapedRecipe(NamespacedKey.minecraft("lightning_sword"), item);
-        recipe.shape(
-                "  X",
-                " X ",
-                "H  "
-        );
-        recipe.setIngredient('X', Material.NETHER_STAR);
-        recipe.setIngredient('H', Material.LIGHTNING_ROD);
-
-        getServer().addRecipe(recipe);
     }
 
     private static void trueNetheriteSword() {
@@ -193,27 +157,5 @@ public class Items  {
         getServer().addRecipe(recipe);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
