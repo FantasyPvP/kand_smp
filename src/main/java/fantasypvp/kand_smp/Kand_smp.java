@@ -4,6 +4,8 @@ import fantasypvp.kand_smp.commands.CmdLightningSword;
 import fantasypvp.kand_smp.commands.CmdTeleportSpawn;
 import fantasypvp.kand_smp.events.Events;
 import fantasypvp.kand_smp.items.LightningGear;
+import fantasypvp.kand_smp.items.TrueNetherite;
+import fantasypvp.kand_smp.items.Witherite;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Kand_smp extends JavaPlugin {
@@ -12,6 +14,8 @@ public final class Kand_smp extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         LightningGear.init();
+        TrueNetherite.init();
+        Witherite.init();
         // register listeners
         getServer().getPluginManager().registerEvents(new Events(), this);
 

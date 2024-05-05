@@ -1,5 +1,6 @@
 package fantasypvp.kand_smp.items;
 
+import fantasypvp.kand_smp.util.attribute_gear.TierVI;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.attribute.Attribute;
@@ -9,6 +10,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import static org.bukkit.Bukkit.getServer;
 
@@ -28,18 +30,10 @@ public class TrueNetherite  {
     }
 
     private static void trueNetheriteSword() {
-        ItemStack item = new ItemStack(Material.NETHERITE_SWORD, 1);
+        ItemStack item = TierVI.sword();
+
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName("§bTrue Netherite Sword");
-
-        meta.addAttributeModifier(
-                org.bukkit.attribute.Attribute.GENERIC_ATTACK_DAMAGE,
-                new AttributeModifier(
-                        "generic.attackDamage",
-                        10.0,
-                        AttributeModifier.Operation.ADD_NUMBER
-                )
-        );
 
         List<String> lore = new ArrayList<>();
         lore.add("§fThe true sword of the Nether");
@@ -58,16 +52,20 @@ public class TrueNetherite  {
     }
 
     private static void trueNetheriteHelmet() {
-        ItemStack item = new ItemStack(Material.NETHERITE_HELMET, 1);
+        ItemStack item = TierVI.helmet();
+
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName("§bTrue Netherite Helmet");
 
+        UUID uuid = UUID.randomUUID();
         meta.addAttributeModifier(
                 Attribute.GENERIC_MAX_HEALTH,
                 new AttributeModifier(
+                        uuid,
                         "generic.maxHealth",
                         5.0,
-                        AttributeModifier.Operation.ADD_NUMBER
+                        AttributeModifier.Operation.ADD_NUMBER,
+                        EquipmentSlot.HEAD
                 )
         );
         item.setItemMeta(meta);
@@ -83,16 +81,20 @@ public class TrueNetherite  {
     }
 
     private static void trueNetheriteChestplate() {
-        ItemStack item = new ItemStack(Material.NETHERITE_CHESTPLATE, 1);
+        ItemStack item = TierVI.chestplate();
+
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName("§bTrue Netherite Chestplate");
 
+        UUID uuid = UUID.randomUUID();
         meta.addAttributeModifier(
                 Attribute.GENERIC_MAX_HEALTH,
                 new AttributeModifier(
+                        uuid,
                         "generic.maxHealth",
                         5.0,
-                        AttributeModifier.Operation.ADD_NUMBER
+                        AttributeModifier.Operation.ADD_NUMBER,
+                        EquipmentSlot.CHEST
                 )
         );
         item.setItemMeta(meta);
@@ -108,16 +110,20 @@ public class TrueNetherite  {
     }
 
     private static void trueNetheriteLeggings() {
-        ItemStack item = new ItemStack(Material.NETHERITE_LEGGINGS, 1);
+        ItemStack item = TierVI.leggings();
+
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName("§bTrue Netherite Leggings");
 
+        UUID uuid = UUID.randomUUID();
         meta.addAttributeModifier(
                 Attribute.GENERIC_MAX_HEALTH,
                 new AttributeModifier(
+                        uuid,
                         "generic.maxHealth",
                         5.0,
-                        AttributeModifier.Operation.ADD_NUMBER
+                        AttributeModifier.Operation.ADD_NUMBER,
+                        EquipmentSlot.LEGS
                 )
         );
         item.setItemMeta(meta);
@@ -133,16 +139,20 @@ public class TrueNetherite  {
     }
 
     private static void trueNetheriteBoots() {
-        ItemStack item = new ItemStack(Material.NETHERITE_BOOTS, 1);
+        ItemStack item = TierVI.boots();
+
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName("§bTrue Netherite Boots");
 
+        UUID uuid = UUID.randomUUID();
         meta.addAttributeModifier(
                 Attribute.GENERIC_MAX_HEALTH,
                 new AttributeModifier(
+                        uuid,
                         "generic.maxHealth",
                         5.0,
-                        AttributeModifier.Operation.ADD_NUMBER
+                        AttributeModifier.Operation.ADD_NUMBER,
+                        EquipmentSlot.FEET
                 )
         );
         item.setItemMeta(meta);
