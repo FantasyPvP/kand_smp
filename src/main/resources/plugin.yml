@@ -12,6 +12,11 @@ commands:
   setSpawnTp:
     description: Sets the world spawn tp point
     usage: /setSpawnTp
+  dashstick:
+    description: gives the user a dash stick
+    usage: /dashstick
+
+
 permissions:
   lightning_sword:
     description: Allows player to run /lightning_sword

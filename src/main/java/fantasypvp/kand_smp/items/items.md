@@ -76,7 +76,12 @@
 # Other
 
 ## Lightning Sword 
-    - Rename necessary?
+    - Rename necessary? (Zeus Staff?)
     - (Critical) attacking strikes lightning on a target
     - independent item 
         - crafted with a lightning rod, two diamonds and two nether stars
+
+## Dash Stick
+    - Rename
+    - Right click launches player where they are looking, plays a sound and summons explosion particles
+    - Disables fall damage when active
