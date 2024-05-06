@@ -9,3 +9,13 @@ commands:
   spawn:
     description: Spawn player
     usage: /spawn
+  setSpawnTp:
+    description: Sets the world spawn tp point
+    usage: /setSpawnTp
+permissions:
+  lightning_sword:
+    description: Allows player to run /lightning_sword
+    default: op
+  setSpawnTp:
+    description: allows player to run /setSpawnTp
+    default: op

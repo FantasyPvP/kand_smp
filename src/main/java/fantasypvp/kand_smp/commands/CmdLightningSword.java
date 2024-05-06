@@ -1,6 +1,7 @@
 package fantasypvp.kand_smp.commands;
 
 import fantasypvp.kand_smp.items.LightningGear;
+import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.entity.Player;
 
@@ -14,8 +15,14 @@ public class CmdLightningSword implements CommandExecutor {
         }
 
         Player player = (Player) sender;
-        if (command.getName().equalsIgnoreCase("lightning_sword")) {
-            player.getInventory().addItem(LightningGear.lightning_sword);
+
+        if(player.hasPermission("lightning_sword")) {
+            if (command.getName().equalsIgnoreCase("lightning_sword")) {
+                player.getInventory().addItem(LightningGear.lightning_sword);
+            }
+
+        }else {
+            player.sendMessage(ChatColor.RED+"You don't have permission to run this command.");
         }
 
         return true;

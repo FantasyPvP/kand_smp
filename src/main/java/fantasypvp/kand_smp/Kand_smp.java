@@ -6,6 +6,7 @@ import fantasypvp.kand_smp.events.Events;
 import fantasypvp.kand_smp.items.LightningGear;
 import fantasypvp.kand_smp.items.TrueNetherite;
 import fantasypvp.kand_smp.items.Witherite;
+import me.danthepythonman.spawntp.commands.SetSpawnCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Kand_smp extends JavaPlugin {
@@ -20,7 +21,8 @@ public final class Kand_smp extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new Events(), this);
 
         getCommand("lightning_sword").setExecutor(new CmdLightningSword());
-        getCommand("spawn").setExecutor(new CmdTeleportSpawn());
+        getCommand("spawn").setExecutor(new CmdTeleportSpawn(this));
+        getCommand("setSpawnTp").setExecutor(new SetSpawnCommand(this));
 
         getServer().broadcastMessage("§aKand SMP has been enabled!");
     }
