@@ -24,3 +24,6 @@ permissions:
   setSpawnTp:
     description: allows player to run /setSpawnTp
     default: op
+  giveDashItem:
+    description: allows the player to run /dashstick
+    default: op
