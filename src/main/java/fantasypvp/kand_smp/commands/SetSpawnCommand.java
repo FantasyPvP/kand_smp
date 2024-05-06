@@ -1,4 +1,4 @@
-package me.danthepythonman.spawntp.commands;
+package fantasypvp.kand_smp.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
