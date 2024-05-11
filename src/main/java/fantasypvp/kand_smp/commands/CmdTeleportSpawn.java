@@ -54,6 +54,9 @@ public class CmdTeleportSpawn implements CommandExecutor {
 
             Location location = new Location(player.getWorld(), x,y,z);
 
+            location.setPitch(player.getLocation().getPitch());
+            location.setYaw(player.getLocation().getYaw());
+
             player.teleport(location);
 
             success = true;

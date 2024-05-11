@@ -2,8 +2,11 @@ package fantasypvp.kand_smp;
 
 import fantasypvp.kand_smp.commands.CmdLightningSword;
 import fantasypvp.kand_smp.commands.CmdTeleportSpawn;
+import fantasypvp.kand_smp.commands.GiveDashItemCommand;
 import fantasypvp.kand_smp.commands.SetSpawnCommand;
+import fantasypvp.kand_smp.events.DashItemListener;
 import fantasypvp.kand_smp.events.Events;
+import fantasypvp.kand_smp.items.DashItem;
 import fantasypvp.kand_smp.items.LightningGear;
 import fantasypvp.kand_smp.items.TrueNetherite;
 import fantasypvp.kand_smp.items.Witherite;
@@ -20,10 +23,13 @@ public final class Kand_smp extends JavaPlugin {
         Witherite.init();
         // register listeners
         getServer().getPluginManager().registerEvents(new Events(), this);
+        getServer().getPluginManager().registerEvents(new DashItemListener(),this);
 
         getCommand("lightning_sword").setExecutor(new CmdLightningSword());
         getCommand("spawn").setExecutor(new CmdTeleportSpawn(this));
         getCommand("setSpawnTp").setExecutor(new SetSpawnCommand(this));
+        getCommand("dashstick").setExecutor(new GiveDashItemCommand());
+
 
         getServer().broadcastMessage("§aKand SMP has been enabled!");
     }

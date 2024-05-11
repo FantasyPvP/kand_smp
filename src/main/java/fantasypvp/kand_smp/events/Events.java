@@ -12,6 +12,7 @@ import static org.bukkit.Bukkit.*;
 public class Events implements Listener {
     @EventHandler
     public static void onPlayerJoin(org.bukkit.event.player.PlayerJoinEvent event) {
+
         getServer().broadcastMessage("§a" + event.getPlayer().getName() + " has joined the server!");
     }
 
