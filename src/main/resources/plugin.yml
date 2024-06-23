@@ -17,6 +17,7 @@ commands:
     usage: /dashstick
 
 
+
 permissions:
   lightning_sword:
     description: Allows player to run /lightning_sword
