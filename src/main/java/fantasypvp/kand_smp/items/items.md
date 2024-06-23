@@ -31,7 +31,7 @@
     - Late game sets / will be difficult to obtain
     - Eg:
         - [T5+] Witherite set:  netherite gear - sword can inflict wither - immunity to wither
-        - [T6] True Netherite:  gear set with higher base stats than neatherite & permanent fire res
+        - [T6] True Netherite:  gear set with higher base stats than netherite & permanent fire res
 
 
 # Nether Sets / Items:
