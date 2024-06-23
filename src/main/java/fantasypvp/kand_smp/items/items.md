@@ -37,7 +37,8 @@
 # Nether Sets / Items:
 
 ## Blazing Halo
-    - crafted with 8 blaze rods in a circle.
+    - crafted with 8 blaze rods in a circle and 1 nether star in the centre
+    - cancels all fire damage
 
 ## True Netherite Set
     - Netherite gear upgraded with nether stars at a smithing table
