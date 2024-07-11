@@ -31,13 +31,14 @@
     - Late game sets / will be difficult to obtain
     - Eg:
         - [T5+] Witherite set:  netherite gear - sword can inflict wither - immunity to wither
-        - [T6] True Netherite:  gear set with higher base stats than neatherite & permanent fire res
+        - [T6] True Netherite:  gear set with higher base stats than netherite & permanent fire res
 
 
 # Nether Sets / Items:
 
 ## Blazing Halo
-    - crafted with 8 blaze rods in a circle.
+    - crafted with 8 blaze rods in a circle and 1 nether star in the centre
+    - cancels all fire damage
 
 ## True Netherite Set
     - Netherite gear upgraded with nether stars at a smithing table
