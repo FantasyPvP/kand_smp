@@ -1,5 +1,6 @@
-package fantasypvp.kand_smp.items;
+package fantasypvp.kand.items;
 
+import fantasypvp.kand.util.attribute_gear.TierVI;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.attribute.Attribute;
@@ -9,6 +10,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import static org.bukkit.Bukkit.getServer;
 
@@ -27,25 +29,31 @@ public class LightningGear {
         lore.add("§7All who oppose shall be smitten");
         meta.setLore(lore);
         // set damage to 12 when in main hand
-        meta.addAttributeModifier(
-                Attribute.GENERIC_ATTACK_DAMAGE,
-                new AttributeModifier(
-                        "generic.attackDamage",
-                        12,
-                        AttributeModifier.Operation.ADD_NUMBER
-                )
-        );
+        UUID uuid = UUID.randomUUID();
+
+        meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier(
+                uuid,
+                "generic.attackDamage",
+                8,
+                AttributeModifier.Operation.ADD_NUMBER,
+                EquipmentSlot.HAND
+        ));
+        meta.addAttributeModifier(Attribute.GENERIC_ATTACK_SPEED, new AttributeModifier(
+                UUID.randomUUID(),
+                "generic.attackSpeed",
+                -2.4,
+                AttributeModifier.Operation.ADD_NUMBER,
+                EquipmentSlot.HAND
+        ));
         item.setItemMeta(meta);
         lightning_sword = item;
-
-        meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
 
         // shaped recipe
         ShapedRecipe recipe = new ShapedRecipe(NamespacedKey.minecraft("lightning_sword"), item);
         recipe.shape(
-                "  X",
                 " X ",
-                "H  "
+                " X ",
+                " H "
         );
         recipe.setIngredient('X', Material.NETHER_STAR);
         recipe.setIngredient('H', Material.LIGHTNING_ROD);

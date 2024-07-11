@@ -1,6 +1,6 @@
-package fantasypvp.kand_smp.items;
+package fantasypvp.kand.items;
 
-import fantasypvp.kand_smp.util.attribute_gear.TierVI;
+import fantasypvp.kand.util.attribute_gear.TierVI;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.attribute.Attribute;

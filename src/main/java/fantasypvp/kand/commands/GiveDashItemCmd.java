@@ -1,15 +1,14 @@
-package fantasypvp.kand_smp.commands;
+package fantasypvp.kand.commands;
 
-import fantasypvp.kand_smp.items.DashItem;
+import fantasypvp.kand.items.DashItem;
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-public class GiveDashItemCommand implements CommandExecutor {
+public class GiveDashItemCmd implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {

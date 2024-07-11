@@ -1,6 +1,6 @@
-name: kand_smp
+name: kand
 version: '${project.version}'
-main: fantasypvp.kand_smp.Kand_smp
+main: fantasypvp.kand.kandMain
 api-version: '1.20'
 commands:
   lightning_sword:
@@ -9,21 +9,42 @@ commands:
   spawn:
     description: Spawn player
     usage: /spawn
-  setSpawnTp:
+  setglobalspawn:
     description: Sets the world spawn tp point
     usage: /setSpawnTp
   dashstick:
     description: gives the user a dash stick
     usage: /dashstick
+  get_currency:
+    description: get currency
+    usage: /get_currency
 
 
 permissions:
-  lightning_sword:
+  kand.admin:
+    description: provides access to all kand commands
+    children:
+      kand.lightning_sword: true
+      kand.spawn: true
+      kand.setglobalspawn: true
+      kand.dashstick: true
+      economy.*: true
+    default: op
+  kand.lightning_sword:
     description: Allows player to run /lightning_sword
     default: op
-  setSpawnTp:
-    description: allows player to run /setSpawnTp
+  kand.setglobalspawn:
+    description: Allows player to run /setglobalspawn
     default: op
+  kand.spawn:
+    description: allows player to teleport to spawn from anywhere in the world
+    default: true
   giveDashItem:
     description: allows the player to run /dashstick
     default: op
+  kand.economy.manage:
+    description: Allows player to use economy commands
+    default: op
+
+
+

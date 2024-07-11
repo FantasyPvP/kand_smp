@@ -1,4 +1,4 @@
-package fantasypvp.kand_smp.util.attribute_gear;
+package fantasypvp.kand.util.attribute_gear;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;

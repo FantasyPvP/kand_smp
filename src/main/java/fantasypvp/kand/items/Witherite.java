@@ -1,8 +1,11 @@
-package fantasypvp.kand_smp.items;
+package fantasypvp.kand.items;
 
-import fantasypvp.kand_smp.util.attribute_gear.TierV;
+import fantasypvp.kand.util.attribute_gear.TierV;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.PrepareSmithingEvent;
 import org.bukkit.inventory.*;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -11,7 +14,7 @@ import java.util.List;
 
 import static org.bukkit.Bukkit.getServer;
 
-public class Witherite  {
+public class Witherite {
     public static ItemStack sword;
     public static ItemStack helmet;
     public static ItemStack chestplate;

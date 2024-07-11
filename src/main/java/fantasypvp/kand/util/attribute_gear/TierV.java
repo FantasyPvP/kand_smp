@@ -1,4 +1,4 @@
-package fantasypvp.kand_smp.util.attribute_gear;
+package fantasypvp.kand.util.attribute_gear;
 
 import org.bukkit.Material;
 import org.bukkit.attribute.Attribute;
@@ -9,6 +9,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.UUID;
 
+// NETHERITE ARMOUR EQUIVALENT
 
 public abstract class TierV extends TierBase {
     public static ItemStack sword () {

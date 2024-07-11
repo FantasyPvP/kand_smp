@@ -1,6 +1,5 @@
-package fantasypvp.kand_smp.commands;
+package fantasypvp.kand.commands;
 //Was made by DanThePythonMan
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.command.Command;

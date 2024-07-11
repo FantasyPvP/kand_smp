@@ -1,4 +1,4 @@
-package fantasypvp.kand_smp.commands;
+package fantasypvp.kand.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -28,12 +28,11 @@ public class SetSpawnCommand implements CommandExecutor {
         }
 
         Player player = (Player) sender;
-        if(!player.hasPermission("SpawnTP.canSetSpawn")){
+        if(!player.hasPermission("kand.setglobalspawn")){
 
             player.sendMessage(ChatColor.RED+"You don't have permission to run this.");
 
         }else{
-
 
             String coordinates = getCoordinates(player);
 

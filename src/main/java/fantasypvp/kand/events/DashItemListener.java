@@ -1,6 +1,6 @@
-package fantasypvp.kand_smp.events;
+package fantasypvp.kand.events;
 
-import fantasypvp.kand_smp.items.DashItem;
+import fantasypvp.kand.items.DashItem;
 
 import org.bukkit.Location;
 
