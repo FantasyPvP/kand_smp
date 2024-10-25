@@ -1,4 +1,4 @@
-package fantasypvp.kand.util.attribute_gear;
+package fantasypvp.kand.util.gear_templates;
 
 import org.bukkit.Material;
 import org.bukkit.attribute.Attribute;
@@ -9,9 +9,9 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.UUID;
 
-// STATS > NETHERITE
+// NETHERITE ARMOUR EQUIVALENT
 
-public abstract class TierVI extends TierBase {
+public abstract class TierV extends TierBase {
     public static ItemStack sword () {
         ItemStack item = new ItemStack(Material.NETHERITE_SWORD, 1);
         ItemMeta meta = item.getItemMeta();
@@ -19,7 +19,7 @@ public abstract class TierVI extends TierBase {
         meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier(
                 UUID.randomUUID(),
                 "generic.attackDamage",
-                9.5,
+                8.0,
                 AttributeModifier.Operation.ADD_NUMBER,
                 EquipmentSlot.HAND
         ));
@@ -47,7 +47,7 @@ public abstract class TierVI extends TierBase {
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(
                 UUID.randomUUID(),
                 "generic.armorToughness",
-                5.0,
+                3.0,
                 AttributeModifier.Operation.ADD_NUMBER,
                 EquipmentSlot.HEAD
         ));
@@ -75,7 +75,7 @@ public abstract class TierVI extends TierBase {
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(
                 UUID.randomUUID(),
                 "generic.armorToughness",
-                5.0,
+                3.0,
                 AttributeModifier.Operation.ADD_NUMBER,
                 EquipmentSlot.CHEST
         ));
@@ -103,7 +103,7 @@ public abstract class TierVI extends TierBase {
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(
                 UUID.randomUUID(),
                 "generic.armorToughness",
-                5.0,
+                3.0,
                 AttributeModifier.Operation.ADD_NUMBER,
                 EquipmentSlot.LEGS
         ));
@@ -131,7 +131,7 @@ public abstract class TierVI extends TierBase {
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(
                 UUID.randomUUID(),
                 "generic.armorToughness",
-                5.0,
+                3.0,
                 AttributeModifier.Operation.ADD_NUMBER,
                 EquipmentSlot.FEET
         ));

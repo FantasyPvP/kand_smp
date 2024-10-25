@@ -1,4 +1,4 @@
-package fantasypvp.kand.util.attribute_gear;
+package fantasypvp.kand.util.gear_templates;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;

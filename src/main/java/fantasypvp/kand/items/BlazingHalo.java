@@ -1,4 +1,4 @@
-package fantasypvp.kand_smp.items;
+package fantasypvp.kand.items;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

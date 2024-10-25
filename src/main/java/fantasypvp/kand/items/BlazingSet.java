@@ -1,6 +1,6 @@
 package fantasypvp.kand.items;
 
-import fantasypvp.kand.util.attribute_gear.TierV;
+import fantasypvp.kand.util.gear_templates.TierV;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.*;
@@ -68,12 +68,12 @@ public class BlazingSet  {
     }
 
     private static void chestplate() {
-        ItemStack item = TierV.chestplate();
+        ItemStack item = new ItemStack(Material.NETHERITE_CHESTPLATE);
 
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName("§bPLACEHOLDER");
         item.setItemMeta(meta);
-        helmet = item;
+        chestplate = item;
 
         NamespacedKey key = new NamespacedKey("fantasypvp.kand_smp.items", "PLACEHOLDER_CHESTPLATE");
         RecipeChoice chestplate = new RecipeChoice.MaterialChoice(Material.NETHERITE_CHESTPLATE);
@@ -87,7 +87,7 @@ public class BlazingSet  {
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName("§bPLACEHOLDER");
         item.setItemMeta(meta);
-        helmet = item;
+        leggings = item;
 
         NamespacedKey key = new NamespacedKey("fantasypvp.kand_smp.items", "PLACEHOLDER_LEGGINGS");
         RecipeChoice leggings = new RecipeChoice.MaterialChoice(Material.NETHERITE_LEGGINGS);
@@ -101,7 +101,7 @@ public class BlazingSet  {
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName("§bPLACEHOLDER");
         item.setItemMeta(meta);
-        helmet = item;
+        boots = item;
 
         NamespacedKey key = new NamespacedKey("fantasypvp.kand_smp.items", "PLACEHOLDER_BOOTS");
         RecipeChoice boots = new RecipeChoice.MaterialChoice(Material.NETHERITE_BOOTS);

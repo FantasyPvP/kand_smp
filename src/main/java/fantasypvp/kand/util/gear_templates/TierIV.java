@@ -1,4 +1,4 @@
-package fantasypvp.kand.util.attribute_gear;
+package fantasypvp.kand.util.gear_templates;
 
 import org.bukkit.Material;
 import org.bukkit.attribute.Attribute;
@@ -9,17 +9,17 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.UUID;
 
-// NETHERITE ARMOUR EQUIVALENT
+// DIAMOND ARMOUR EQUIVALENT
 
-public abstract class TierV extends TierBase {
+public abstract class TierIV extends TierBase {
     public static ItemStack sword () {
-        ItemStack item = new ItemStack(Material.NETHERITE_SWORD, 1);
+        ItemStack item = new ItemStack(Material.DIAMOND_SWORD, 1);
         ItemMeta meta = item.getItemMeta();
 
         meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier(
                 UUID.randomUUID(),
                 "generic.attackDamage",
-                8.0,
+                7.0,
                 AttributeModifier.Operation.ADD_NUMBER,
                 EquipmentSlot.HAND
         ));
@@ -35,7 +35,7 @@ public abstract class TierV extends TierBase {
     }
 
     public static ItemStack helmet () {
-        ItemStack item = new ItemStack(Material.NETHERITE_HELMET, 1);
+        ItemStack item = new ItemStack(Material.DIAMOND_HELMET, 1);
         ItemMeta meta = item.getItemMeta();
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(
                 UUID.randomUUID(),
@@ -47,14 +47,7 @@ public abstract class TierV extends TierBase {
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(
                 UUID.randomUUID(),
                 "generic.armorToughness",
-                3.0,
-                AttributeModifier.Operation.ADD_NUMBER,
-                EquipmentSlot.HEAD
-        ));
-        meta.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE, new AttributeModifier(
-                UUID.randomUUID(),
-                "generic.knockbackResistance",
-                0.1,
+                2.0,
                 AttributeModifier.Operation.ADD_NUMBER,
                 EquipmentSlot.HEAD
         ));
@@ -63,7 +56,7 @@ public abstract class TierV extends TierBase {
     }
 
     public static ItemStack chestplate () {
-        ItemStack item = new ItemStack(Material.NETHERITE_CHESTPLATE, 1);
+        ItemStack item = new ItemStack(Material.DIAMOND_CHESTPLATE, 1);
         ItemMeta meta = item.getItemMeta();
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(
                 UUID.randomUUID(),
@@ -75,14 +68,7 @@ public abstract class TierV extends TierBase {
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(
                 UUID.randomUUID(),
                 "generic.armorToughness",
-                3.0,
-                AttributeModifier.Operation.ADD_NUMBER,
-                EquipmentSlot.CHEST
-        ));
-        meta.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE, new AttributeModifier(
-                UUID.randomUUID(),
-                "generic.knockbackResistance",
-                0.1,
+                2.0,
                 AttributeModifier.Operation.ADD_NUMBER,
                 EquipmentSlot.CHEST
         ));
@@ -91,7 +77,7 @@ public abstract class TierV extends TierBase {
     }
 
     public static ItemStack leggings () {
-        ItemStack item = new ItemStack(Material.NETHERITE_LEGGINGS, 1);
+        ItemStack item = new ItemStack(Material.DIAMOND_LEGGINGS, 1);
         ItemMeta meta = item.getItemMeta();
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(
                 UUID.randomUUID(),
@@ -103,14 +89,7 @@ public abstract class TierV extends TierBase {
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(
                 UUID.randomUUID(),
                 "generic.armorToughness",
-                3.0,
-                AttributeModifier.Operation.ADD_NUMBER,
-                EquipmentSlot.LEGS
-        ));
-        meta.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE, new AttributeModifier(
-                UUID.randomUUID(),
-                "generic.knockbackResistance",
-                0.1,
+                2.0,
                 AttributeModifier.Operation.ADD_NUMBER,
                 EquipmentSlot.LEGS
         ));
@@ -119,7 +98,7 @@ public abstract class TierV extends TierBase {
     }
 
     public static ItemStack boots () {
-        ItemStack item = new ItemStack(Material.NETHERITE_BOOTS, 1);
+        ItemStack item = new ItemStack(Material.DIAMOND_BOOTS, 1);
         ItemMeta meta = item.getItemMeta();
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(
                 UUID.randomUUID(),
@@ -131,14 +110,7 @@ public abstract class TierV extends TierBase {
         meta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(
                 UUID.randomUUID(),
                 "generic.armorToughness",
-                3.0,
-                AttributeModifier.Operation.ADD_NUMBER,
-                EquipmentSlot.FEET
-        ));
-        meta.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE, new AttributeModifier(
-                UUID.randomUUID(),
-                "generic.knockbackResistance",
-                0.1,
+                2.0,
                 AttributeModifier.Operation.ADD_NUMBER,
                 EquipmentSlot.FEET
         ));
